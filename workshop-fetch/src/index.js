@@ -37,6 +37,13 @@ const formatPrice = (price) => {
   return newPrice;
 };
 
+// ------------------ Event Listener con Event Delegation
+app.addEventListener("click", (event) => {
+  if (event.target.nodeName === "H2") {
+    window.alert("Hola");
+  }
+});
+
 // ------------------ Async Await
 
 async function fetchData() {
